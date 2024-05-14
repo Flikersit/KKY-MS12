@@ -15,7 +15,7 @@ title('signal')
 %% time parameters
 average_value = mean(data.signal);
 disp(['Avarage value of a signal: ', num2str(average_value)]);
-energy = sum(data.signal.^2);
+energy = 1/frequency*sum(data.signal.^2);
 disp(['Energy of a signal: ', num2str(energy)]);
 effective_value = sqrt(mean(data.signal.^2));
 disp(['Effective value:', num2str(effective_value)]);
